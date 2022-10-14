@@ -1,0 +1,213 @@
+main
+  font-family: Arial
+  & section
+    height: 100vh
+.main
+  display: flex
+  background: linear-gradient(#c9d77f, #03568c)
+  color: white
+  .photo
+    display: flex
+    min-width: 45%
+    & img
+      display: block
+      margin: auto
+      height: 100%
+
+  .article
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &-title
+      font-size: 46px
+    &-text
+      font-size: 26px
+      margin: 60px 0px
+.about
+  display: flex
+  .photo
+    display: flex
+    width: 100%
+    background-color: rgb(231,232,226)
+    & img
+      display: block
+      margin: auto
+      height: 100%
+
+  .article
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 0px 100px
+    &-title
+      font-size: 46px
+    &-text
+      font-size: 26px
+      margin: 60px 0px
+.consult
+  display: flex
+  flex-direction: column
+  padding-top: 8vh
+  background: linear-gradient(rgba(255, 165, 0, 0.45), rgba(255, 99, 71, 0.47))
+  & .consult-header
+    display: flex
+    width: 100%
+    justify-content: center
+    margin: 20px 0px
+    padding: 40px 0px
+  & .consult-options
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+    & .consult-option
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 20%
+      height: 100%
+      margin: auto
+      background-color: whitesmoke
+      img
+        width: 100%
+      &-title
+        margin: 20px 0px
+      &-text
+        padding: 10px
+        text-align: center
+        margin-bottom: 40px
+
+  &-button
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    margin: 60px 0px
+    & button
+      width: 200px
+      border: none
+      text-align: center
+      font-weight: 800
+      background-color: rgba(3, 86, 140, 0.5)
+      height: 40px
+      border-radius: 50px
+      color: whitesmoke
+
+.sign
+  display: flex
+  flex-direction: column
+  padding-top: 8vh
+  & .sign-heading
+    display: flex
+    width: 100%
+    justify-content: center
+    margin: 40px 0px 40px 0px
+  & .sign-cards
+    display: flex
+    width: 100%
+    margin: auto 0
+    justify-content: space-around
+    & .sign-card
+      position: relative
+      width: 25%
+      display: flex
+      flex-direction: column
+      align-items: center
+      & img
+        margin: 20px 0px
+      &-title
+        margin: 20px 0px
+        font-size: 28px
+        font-weight: 600
+        text-align: center
+      &-description
+        margin: 20px 0px
+        font-size: 22px
+        text-align: center
+      &:not(.sign-card:first-child)::before
+        display: block
+        width: 50px
+        height: 50px
+        content: url("./../../../assets/img/arrow.png")
+        position: absolute
+        top: 50%
+        left: -20%
+
+.form
+  display: flex
+  padding-top: 8vh
+  background-color: bisque
+  & .contact-from
+    display: flex
+    flex-direction: column
+    margin: auto
+    width: 70%
+    height: 80%
+    background-color: whitesmoke
+    border-radius: 20px
+
+    & .contact-title
+      display: flex
+      justify-content: center
+      width: 100%
+      text-transform: uppercase
+      margin: 20px 0px 40px
+    & .contact-description
+      display: flex
+      width: 86%
+      font-size: 24px
+      margin: 40px auto 60px
+      text-align: center
+      justify-content: center
+      text-transform: uppercase
+    & .contact-window
+      display: flex
+      & .textarea-descr
+        height: 100%
+      & div
+        width: 50%
+        & div
+          display: flex
+          flex-direction: column
+          width: 100%
+          padding: 0px 20px
+          margin: 10px 0px
+          & input
+            width: 100%
+            font-size: 24px
+            height: 40px
+            outline: none
+            border-radius: 10px
+            padding: 0px 5px
+          & label
+            margin: 5px 5px
+          & textarea
+            width: 100%
+            height: 100%
+            outline: none
+            border-radius: 10px
+            padding: 5px
+            font-size: 24px
+
+.connect
+  display: flex
+  background: linear-gradient(#c9d77f, #03568c)
+  color: white
+  .photo
+    display: flex
+    min-width: 45%
+    & img
+      display: block
+      margin: auto
+      height: 100%
+
+  .socials
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+    & div
+      display: flex
+      margin: 20px
+      & img
+        width: 60px
